@@ -1,0 +1,48 @@
+// --------------------------------------------------
+// Easing
+//---------------------------------------------------
+$_1_SineIn: cubic-bezier(0.47, 0, 0.745, 0.715);
+$_1_SineOut: cubic-bezier(0.39, 0.575, 0.565, 1);
+$_1_SineInOut: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+$_2_QuadIn: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$_2_QuadOut: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$_2_QuadInOut: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$_3_CubicIn: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$_3_CubicOut: cubic-bezier(0.215, 0.61, 0.355, 1);
+$_3_CubicInOut: cubic-bezier(0.645, 0.045, 0.355, 1);
+$_4_QuartIn: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$_4_QuartOut: cubic-bezier(0.165, 0.84, 0.44, 1);
+$_4_QuartInOut: cubic-bezier(0.77, 0, 0.175, 1);
+$_5_QuintIn: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$_5_QuintOut: cubic-bezier(0.23, 1, 0.32, 1);
+$_5_QuintInOut: cubic-bezier(0.86, 0, 0.07, 1);
+$_6_ExpoIn: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$_6_ExpoOut: cubic-bezier(0.19, 1, 0.22, 1);
+$_6_ExpoInOut: cubic-bezier(1, 0, 0, 1);
+$_7_CircIn: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+$_7_CircOut: cubic-bezier(0.075, 0.82, 0.165, 1);
+$_7_CircInOut: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$_BackIn: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+$_BackOut: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$_BackInOut: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+$_BackOutStrong: cubic-bezier(.5, 1.5, .5, 1.5);
+$_BackInStrong: cubic-bezier(.5, -0.5, .5, -0.5);
+$_BackInOutStrong: cubic-bezier(0.5,-1,0.5,2);
+
+$_12_SineQuadInOut: cubic-bezier(0.445, 0.05, 0.515, 0.955);
+$_21_QuadSineInOut: cubic-bezier(0.455, 0.03, 0.55, 0.95);
+
+$_23_QuadCubicInOut: cubic-bezier(0.455, 0.03, 0.355, 1);
+$_32_CubicQuadInOut: cubic-bezier(0.645, 0.045, 0.515, 0.955);
+
+$_34_CubicQuartInOut: cubic-bezier(0.645, 0.045, 0.175, 1);
+$_43_QuartCubicInOut: cubic-bezier(0.77, 0, 0.355, 1);
+
+$_45_QuartQuintInOut: cubic-bezier(0.77, 0, 0.07, 1);
+$_54_QuintQuartInOut: cubic-bezier(0.86, 0, 0.175, 1);
+
+$_46_QuartExpoInOut: cubic-bezier(0.77, 0, 1, 0);
+$_64_ExpoQuartInOut: cubic-bezier(1, 0,0.175, 1);
+$_56_QuintExpoInOut: cubic-bezier(0.86, 0, 1, 0);
+$_65_ExpoQuintInOut: cubic-bezier(1, 0, 0.07, 1);

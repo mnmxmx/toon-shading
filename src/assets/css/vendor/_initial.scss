@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+// -------------------- from reset.css
+// 必要な要素だけを残して一部削除
+html,
+body, article, section, nav, aside,
+h1, h2, h3, h4, h5, h6,
+header, footer, address,
+p, ol, ul, li, dl, dt, dd, div,
+a, strong, small, sup, sup, span,
+img, iframe, embed, object, video, audio,
+table, tr, td, th,
+canvas,
+svg {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+
+// -------------------- from normalize.css / sanitize.css
+// 必要なプロパティだけを残して一部削除 & 一部追加
+html {
+  cursor: default;
+  line-height: 1; // 行間はいったん1にします、案件ごとにデザインに合わせて調整してください
+
+  // SPでの文字サイズの自動調整を無効
+  // [参考]
+  // http://ultimate-ez.com/2014/03/29/3572/
+  // http://xxmiz0rexx.tumblr.com/post/73393990520/webkit-text-size-adjust-100%E3%81%8C%E5%8A%B9%E3%81%8B%E3%81%AA%E3%81%8F%E3%81%A6%E7%84%A6%E3%81%A3%E3%81%9F
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  &.windows{
+    -webkit-font-smoothing: antialiased;
+  }
+  
+
+  // ---------- 以下、よく使うのでココに入れておく
+
+  // iOSのスクロールをルート要素以外もスムーズに
+  -webkit-overflow-scrolling: touch;
+  // iOSのタップした時のハイライトカラーを無効化
+  -webkit-tap-highlight-color: transparent;
+
+  // ゴシック/サンセリフ系の標準
+  // 日本語環境向けのサイトは日本語名が先の方が良い説を採用
+  font-family: arial;
+}
+
+
+
+// -------------------- from sanitize.css
+// 色変更
+
+// テキスト選択の色を統一
+// いったんモノトーンで入れてあります
+// 案件ごとにデザインにあった色を設定してください
+
+// 擬似要素のベンダープレフィックスは別々で書かないとダメみたいです
+// [参考]
+// https://developer.mozilla.org/ja/docs/Web/CSS/::selection
+//::-moz-selection,
+//::selection {
+//  background-color: #ccc;
+//  color: #000;
+//  text-shadow: none;
+//}
+
+::-moz-selection {
+  background-color: #ccc;
+  color: #000;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #ccc;
+  color: #000;
+  text-shadow: none;
+}
+
+
+
+// -------------------- from reset.css
+// そのまま流用
+
+// デフォルトのマーカーは広告案件ではあまり使わないので消します
+// 必要であれば案件ごとにデザインされているものを再現してください
+ol, ul {
+  list-style: none;
+}
+
+
+
+// -------------------- from reset.css / sanitize.css
+// そのまま流用
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+// -------------------- from reset.css / normalize.css / sanitize.css
+// 必要な要素だけを残して一部削除
+article, section, nav, aside, 
+header, footer {
+  display: block;
+}
+
+
+
+// -------------------- from normalize.css / sanitize.css
+// 必要な要素だけを残して一部削除
+video, audio,
+canvas {
+  display: inline-block;
+}
+
+
+
+// -------------------- from normalize.css / sanitize.css
+// そのまま流用
+
+// コントローラが無い場合は非表示に
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+
+
+// -------------------- from normalize.css / sanitize.css
+// normalize.css の方を流用
+
+// 各種ブラウザの見た目を統一しているっぽいですが、詳細は不明
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+
+
+// -------------------- from normalize.css / sanitize.css
+// 必要な要素だけを残して一部削除
+
+// 各種ブラウザの見た目を統一しているっぽいですが、詳細は不明
+strong {
+  font-weight: inherit;
+}
+strong {
+  font-weight: bolder;
+}
+
+
+
+// -------------------- from normalize.css / sanitize.css
+// 必要なプロパティだけを残して一部削除
+
+// 上付き/下付き文字の表示を統一
+// 注釈用の*とかでたまに使うので採用
+// フォントサイズは案件ごとにデザインに合わせて調整してください
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -.25em;
+}
+sup {
+  top: -.5em;
+}
+
+
+
+// -------------------- from sanitize.css
+// そのまま流用
+
+// SVGにCSSで色を指定できるようにする
+// [参考]
+// http://www.02320.net/how-to-fill-svg-by-css/
+svg {
+  fill: currentColor;
+}
+
+
+
+// -------------------- from normalize.css / sanitize.css
+// そのまま流用
+
+// IEでoverflow:hiddenにならないのを調整
+svg:not(:root) {
+  overflow: hidden;
+}
+
+
+
+// -------------------- from normalize.css / sanitize.css
+// そのまま流用
+a {
+  // IE10でアクティブなリンクの背景がグレーになるのを防ぐ
+  background-color: transparent;
+
+  // iOS/Mac Safariで text-decoration: underline にすると線が切れるのを防ぐ
+  // [参考]
+  // https://css-tricks.com/almanac/properties/t/text-decoration-skip/
+  -webkit-text-decoration-skip: objects;
+}
+
+
+
+// -------------------- from normalize.css / sanitize.css
+// normalize.css の方を流用
+
+// リンクの点線を削除？
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+
+
+// -------------------- from normalize.css / sanitize.css
+// 必要な要素だけを残して一部削除
+
+// IEのタップの反応速度を早める
+// [参考]
+// http://lealog.hateblo.jp/entry/2015/02/19/124748
+a {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}

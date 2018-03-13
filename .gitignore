@@ -1,0 +1,52 @@
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+# node.js
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+results
+npm-debug.log
+node_modules
+
+# Sass
+.sass-cache
+
+# SublimeText
+*.sublime-project
+*.sublime-workspace
+sftp-config.json
+
+#vim
+.*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+.idea
+.htaccess
+.htpasswd
+pull.php
+
+#dev
+#dst
+build
