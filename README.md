@@ -1,6 +1,6 @@
 # Toon Shading
   
-* [Demo](https://mnmxmx.github.io/toon-shading/dst/)  
+* [Demo](https://mnmxmx.github.io/toon-shading/dst/index.html)  
 * [How To Implement Toon Shading With Webgl (in Japanese)](https://wgld.org/d/webgl/w048.html)  
   
   
